@@ -1,0 +1,13 @@
+<h1 class="col-sm-6">******** Welcome to the longest word-game !********</h1>
+<h2>Here is your grid :</h2>
+<p><%= @grid %></p>
+
+
+<div class="row">
+<form action="/result">
+  <h2><label class="col-sm-12" for="answer">What's your best shot?</label></h2>
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input class="col-sm-6" type="text" id="answer" name="answer" placeholder="Quickly!!">
+  <input type="submit" class="btn btn-primary" value="Go on!">
+</form>
+</div>
